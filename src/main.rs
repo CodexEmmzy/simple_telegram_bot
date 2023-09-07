@@ -71,7 +71,7 @@ async fn main() {
     let bot = Bot::from_env();
 
     let addr = ([127, 0, 0, 1], 8000).into();
-    let url = "https://9c8a-105-113-87-226.ngrok-free.app".parse().unwrap();
+    let url = "https://b559-105-113-83-125.ngrok-free.app".parse().unwrap();
     let listener = webhooks::axum(bot.clone(), webhooks::Options::new(addr, url))
         .await
         .expect("Couldn't setup webhook");
